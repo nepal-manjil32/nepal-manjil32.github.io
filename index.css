@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f6f5f1;
+}
+
+.section-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+main{
+    margin-top: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.paper-implementations, .projects, .organizations{
+    margin-top: 1rem;
+    margin-left: 10.5rem;
+}
+
+
+/*--- Navbar ---*/
+nav{
+    width: 100vw;
+    color: white;
+    background-color: #060e66;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30rem;
+    padding: 15px;
+    position: fixed;
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-bottom: 1px solid #060e66;
+}
+
+.nav-bar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.nav-bar .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+/*---  Main Content ---*/
+
+/*  Hero */
+.hero{
+    padding: 40px;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    border-bottom:  1px solid black;
+    margin-bottom: 2rem;
+}
+
+.hero .left-main{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+.hero .right-main{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+    
+
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+    } 
+    
+    p{
+        font-weight: 300;
+    }
+}
+
+.hero .left-main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .left-main img{
+    border-radius: 50%;
+    width: 55%;
+}
+
+.hero .left-main .position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.hero .left-main .contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 0.8rem;
+
+    .blue-font{
+        color: #071078;
+    }
+}
+
+
+
+.hero .left-main .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+
+    img{
+        width: 35%;
+    }
+}
+
+.socials .social-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+
+    a{
+        color: #071078;
+        text-decoration: none;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #f6f5f1;
+    }
+
+    a:hover{
+        border-bottom: 1px solid #071078;
+    }
+}
+
+
+/*  Paper Implementations */
+.paper-implementations{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.paper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+    background-color: white;
+}
+
+.paper-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    height: 100%;
+    width: 25vw;
+
+    img{
+        width: 70%;
+    }
+}
+
+.paper-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px;
+    height: 100%;
+    width: 55vw;
+
+    .paper-title{
+        font-size: 18px;
+    }
+
+    .paper-author{
+        font-size: 15px;
+    }
+
+    .journal{
+        font-size: 15px;
+    }
+
+    .paper-links{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+
+        a{
+            color: #071078;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+/*--- Footer ---*/
