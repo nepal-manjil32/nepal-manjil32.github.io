@@ -1,6 +1,6 @@
 # Portfolio Website  
 
-This is my personal portfolio website to showcase my projects, research, and experience.  
+This is my personal portfolio website.
 
 ## How to Use  
 
