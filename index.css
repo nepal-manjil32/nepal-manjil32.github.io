@@ -143,8 +143,13 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.pos-name{
     font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .hero .left-main .contacts{
@@ -152,11 +157,13 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 0.8rem;
 
-    .blue-font{
+    .email{
+        font-weight: 300;
         color: #000000;
+        font-style: italic;
     }
 }
 
@@ -349,10 +356,11 @@ nav{
 .org{
     /* background-color: red; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     background-color: #ffffff;
+    width: 80vw;
 }
 
 .org-img{
@@ -373,10 +381,20 @@ nav{
     gap: 5px;
 }
 
+.org-position{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+}
+
 .org-website a{
     text-decoration: none;
     font-size: 13px;
     color: #091df3;
+}
+
+.org-desc{
+    font-size: 13px;
 }
 
 /*--- Footer ---*/
