@@ -43,7 +43,7 @@ nav{
     width: 100vw;
     color: white;
     /* background-color: #060e66; */
-    background-color: #03051E;
+    background-color: #000000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -150,6 +150,12 @@ nav{
 .pos-name{
     font-size: 1.1rem;
     font-weight: 400;
+}
+
+.research-interest{
+    font-size: 15px;
+    font-weight: 100;
+    color: #091df3;
 }
 
 .hero .left-main .contacts{
