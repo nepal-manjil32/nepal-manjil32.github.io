@@ -6,15 +6,30 @@
     <title>Manjil Nepal</title>
     <link rel="icon" type="image/png" href="./assets/MN.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
     
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div><a href="#">Home</a></div>
         <div><a href="#research-work">Research</a></div>
         <div><a href="#paper-implementations">Replications</a></div>
         <div><a href="#projects">Project</a></div>
         <div><a href="#engagements">Engagement</a></div>
+    </nav> -->
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#research-work">Research</a>
+            <a href="#paper-implementations">Replications</a>
+            <a href="#projects">Project</a>
+            <a href="#engagements">Engagement</a>
+        </div>
     </nav>
 
     <main>
@@ -191,6 +206,10 @@
                 navLinks.forEach(link => link.classList.remove("scrolled-nav-div"));
             }
         });
+
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("show");
+        }
     </script>    
 </body>
 </html>

@@ -51,10 +51,21 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     height: 10vh; 
     top: 0; /* Ensures nav stays fixed at the top */
     border-bottom: 2px solid rgb(166, 164, 164);
+}
+
+nav button{
+    color: white;
+    background-color: white;
+}
+nav > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 nav a {
