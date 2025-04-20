@@ -381,6 +381,20 @@ main {
     line-height: 1.4;
 }
 
+.publication-status {
+    margin-bottom: 15px;
+    color: #2e7d32;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.publication-status i {
+    font-size: 1rem;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
