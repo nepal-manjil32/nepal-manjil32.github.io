@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manjil Nepal | Portfolio</title>
+    <title>Manjil Nepal</title>
     <link rel="icon" type="image/png" href="./assets/MN.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -34,19 +37,18 @@
             <div class="container">
                 <div class="profile-card">
                     <div class="profile-image">
-                        <img src="./assets/manjil.jpg" alt="Manjil Nepal">
+                        <img src="./assets/MANJIL.jpg" alt="Manjil Nepal">
                     </div>
                     <div class="profile-info">
                         <h1>Manjil Nepal</h1>
-                        <h2>Deep and Federated Learning Researcher</h2>
                         <p class="location"><i class="fas fa-map-marker-alt"></i> Amaravati, Andhra Pradesh 522240, India</p>
                         <p class="email"><i class="fas fa-envelope"></i> manjil.nepal03@gmail.com</p>
-                        <p class="interests">Research Interest: Computer Vision, Deep Learning, Federated Learning</p>
+                        <p class="interests">Research Interest: Deep Learning & Federated Learning</p>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/manjil-nepal/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/nepal-manjil32" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             <a href="https://x.com/nepalmanjil" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="https://scholar.google.com/citations?user=DzORCCkAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
                             <a href="#" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
                         </div>
                     </div>
@@ -60,7 +62,28 @@
                 <div class="about-content">
                     <p>I'm Manjil Nepal, a third-year B.Tech Computer Science and Engineering student at <a href="https://srmap.edu.in/">SRM University-AP, India</a>, specializing in Deep Learning (DL) and Federated Learning (FL). My research primarily focuses on applying DL and FL in medical applications, exploring privacy-preserving techniques for decentralized healthcare AI.</p>
                     <p>I enjoy replicating machine learning research papers. I work with <a href="https://pytorch.org/">PyTorch</a> for Deep Learning and the <a href="https://flower.ai/">Flower Framework</a> for Federated Learning, constantly experimenting with new techniques to enhance model efficiency.</p>
-                    <p>Beyond my technical interests, I have a strong passion for geopolitics, history, and international relations, continuously learning about global affairs and their impact on technology and society.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="./assets/iit-dhanbad.png" alt="IIT Dhanbad">
+                        </div>
+                        <div class="experience-content">
+                            <h3>Research Intern</h3>
+                            <h4>Indian Institute of Technology (IIT) Dhanbad</h4>
+                            <p class="experience-duration"><i class="fas fa-calendar-alt"></i> May 2024 - Present</p>
+                            <p style="font-size: 0.9rem;">Working on federated learning for resource constrained devices under the guidance of 
+                                <a href="https://tamoghnaojha.github.io/" style="color: blue;" target="_blank">Dr. Tamoghna Ojha</a>.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -90,17 +113,18 @@
                             <a href="https://github.com/nepal-manjil32/ViT-from-scratch" target="_blank" class="btn-link"><i class="fas fa-code"></i> View Code</a>
                         </div>
                     </div>
-                    
+
                     <div class="paper-card">
                         <div class="paper-image">
-                            <img src="./assets/paper/vgg16.png" alt="VGG16">
+                            <img src="./assets/paper/vgg16.png" alt="Vision Transformer">
                         </div>
                         <div class="paper-content">
                             <h3>VGG16</h3>
-                            <p>A PyTorch Implementation of VGG-16 from the Paper <a href="https://arxiv.org/abs/1409.1556" target="_blank">"Very Deep Convolutional Networks for Large-Scale Image Recognition"</a> by Karen Simonyan and Andrew Zisserman.</p>
+                            <p>A PyTorch Implementation of ViT from the Paper <a href="https://arxiv.org/abs/1409.1556" target="_blank">"Very Deep Convolutional Networks for Large-Scale Image Recognition"</a> by Karen Simonyan, Andrew Zisserman.</p>
                             <a href="https://github.com/nepal-manjil32/pytorch-models/tree/main/VGG-16" target="_blank" class="btn-link"><i class="fas fa-code"></i> View Code</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -114,9 +138,12 @@
                             <img src="./assets/research/sentiment-anl.png" alt="Sentiment Analysis">
                         </div>
                         <div class="research-content">
-                            <h3>Enhancing Educational Feedback Systems with Machine Learning and Neural Networks for Sentiment Analysis</h3>
-                            <p class="publication-status"><i class="fas fa-graduation-cap"></i> Accepted to 16th ICCCNT Conference 2025, IIT Indore, India</p>
-                            <a href="https://github.com/nepal-manjil32/course-sentiment-analysis" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> View Research</a>
+                            <h3>Enhancing Educational Feedback Systems with ML and Neural Networks for Sentiment Analysis</h3>
+                            <p class="publication-status"><i class="fas fa-graduation-cap"></i> Accepted to 16th ICCCNT Conference 2025, IIT Indore</p>
+                            <div class="research-links">
+                                <a href="" target="_blank" class="btn-link"><i class="fas fa-file-alt"></i> Paper</a>
+                                <a href="" target="_blank" class="btn-link"><i class="fas fa-code"></i> Code</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,12 +160,11 @@
                         </div>
                         <div class="project-content">
                             <h3>Dr. CureX</h3>
-                            <p>An AI-powered health app for instant symptom analysis, personalized remedies, and hospital recommendations. Featuring emergency support and medical report analysis, it enhances healthcare accessibility for all.</p>
+                            <p>An AI-powered health app for instant symptom analysis, personalized remedies, and hospital recommendations.</p>
                             <div class="project-meta">
                                 <p class="tech-stack"><i class="fas fa-code"></i> MERN Stack, GROQ API, NEWS API</p>
-                                <p class="status"><i class="fas fa-spinner"></i> Status: Ongoing</p>
+                                <a href="https://github.com/nepal-manjil32/dr-curex" target="_blank" class="btn-link"><i class="fab fa-github"></i> View Project</a>
                             </div>
-                            <a href="https://github.com/nepal-manjil32/dr-curex" target="_blank" class="btn-link"><i class="fab fa-github"></i> View Project</a>
                         </div>
                     </div>
 
@@ -148,12 +174,11 @@
                         </div>
                         <div class="project-content">
                             <h3>Hat Bazar</h3>
-                            <p>A full-stack grocery application designed to make shopping convenient for users in Nepal. This project currently focuses on the front-end development, and the backend database will be added in future updates.</p>
+                            <p>A full-stack grocery application designed to make shopping convenient for users in Nepal.</p>
                             <div class="project-meta">
                                 <p class="tech-stack"><i class="fas fa-code"></i> ABC, XYZ, HGS</p>
-                                <p class="status"><i class="fas fa-check-circle"></i> Status: Completed</p>
+                                <a href="https://github.com/nepal-manjil32/grocery-app" target="_blank" class="btn-link"><i class="fab fa-github"></i> View Project</a>
                             </div>
-                            <a href="https://github.com/nepal-manjil32/grocery-app" target="_blank" class="btn-link"><i class="fab fa-github"></i> View Project</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +201,7 @@
 
                     <div class="engagement-card">
                         <div class="engagement-logo">
-                            <img src="./assets/aiesec_logo.png" alt="AIESEC">
+                            <img src="./assets/aiesec.png" alt="AIESEC">
                         </div>
                         <div class="engagement-content">
                             <h3>AIESEC in Amaravati</h3>

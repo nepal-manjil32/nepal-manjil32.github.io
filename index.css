@@ -9,12 +9,11 @@
 
 :root {
     --primary-font: 'Poppins', sans-serif;
-    --primary-color: blue;
+    --primary-color: #2831da; /* Changed from blue to dark purple */
     --dark-color: #333;
-    --light-bg: #fafafa;
+    --light-bg: #f5f5f5;
     --border-color: #e0e0e0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -33,7 +32,6 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    transition: var(--transition);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,8 +46,7 @@ img {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 60vw; /* Already set to 60vw as requested */
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -60,13 +57,15 @@ img {
     align-items: center;
     color: var(--primary-color);
     font-weight: 500;
-    transition: var(--transition);
     gap: 8px;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
 }
 
 .btn-link:hover {
-    opacity: 0.8;
-    transform: translateY(-2px);
+    opacity: 0.9;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 /* Header & Navigation */
@@ -77,7 +76,6 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 1000;
-    transition: var(--transition);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -121,16 +119,14 @@ nav {
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
-    transition: var(--transition);
 }
 
-.nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
 }
 
 #navbar.scrolled {
-    background-color: rgba(61, 60, 60, 0.95);
+    background-color: rgba(51, 51, 51, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -154,7 +150,6 @@ nav {
     width: 100%;
     height: 2px;
     background-color: var(--dark-color);
-    transition: var(--transition);
     margin: 5px 0;
 }
 
@@ -164,7 +159,7 @@ main {
 }
 
 .section {
-    padding: 60px 0;
+    padding: 50px 0;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -199,7 +194,7 @@ main {
 }
 
 .profile-image {
-    flex: 0 0 200px;
+    flex: 0 0 250px;
 }
 
 .profile-image img {
@@ -258,13 +253,11 @@ main {
     border-radius: 50%;
     background-color: #f5f5f5;
     color: #555;
-    transition: var(--transition);
 }
 
 .social-links a:hover {
     background-color: var(--primary-color);
     color: white;
-    transform: translateY(-3px);
 }
 
 /* About Section */
@@ -284,6 +277,62 @@ main {
     font-weight: 400;
 }
 
+/* Experience Section */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experience-card { 
+    display: flex;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.experience-image {
+    flex: 0 0 35%; /* Changed from 40% to 35% as requested */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.experience-image img {
+    max-height: 140px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.experience-content {
+    flex: 1; /* Content takes the remaining 65% */
+    padding: 20px;
+}
+
+.experience-content h3 {
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+.experience-content h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.experience-duration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
 /* Cards Container */
 .cards-container {
     display: flex;
@@ -297,17 +346,11 @@ main {
     background-color: var(--light-bg);
     border-radius: 8px;
     overflow: hidden;
-    transition: var(--transition);
     box-shadow: var(--shadow);
 }
 
-.paper-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 .paper-image {
-    flex: 0 0 30%;
+    flex: 0 0 35%; /* Changed from 40% to 35% as requested */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,24 +359,24 @@ main {
 }
 
 .paper-image img {
-    max-height: 150px;
+    max-height: 120px;
     max-width: 100%;
     object-fit: contain;
 }
 
 .paper-content {
-    flex: 1;
+    flex: 1; /* Content takes the remaining 65% */
     padding: 20px;
 }
 
 .paper-content h3 {
     margin-bottom: 10px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .paper-content p {
     margin-bottom: 15px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .paper-content a {
@@ -346,17 +389,11 @@ main {
     background-color: var(--light-bg);
     border-radius: 8px;
     overflow: hidden;
-    transition: var(--transition);
     box-shadow: var(--shadow);
 }
 
-.research-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 .research-image {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,13 +414,14 @@ main {
 
 .research-content h3 {
     margin-bottom: 15px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.4;
+    font-weight: 450;
 }
 
 .publication-status {
     margin-bottom: 15px;
-    color: #2e7d32;
+    color: #555;
     font-weight: 500;
     font-size: 0.9rem;
     display: flex;
@@ -395,31 +433,49 @@ main {
     font-size: 1rem;
 }
 
+.research-links {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    padding: 6px 0;
+}
+
+.btn-link:hover {
+    color: var(--accent-color);
+}
+
+.btn-link i {
+    font-size: 1rem;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .project-card {
     background-color: var(--light-bg);
     border-radius: 8px;
     overflow: hidden;
-    transition: var(--transition);
     box-shadow: var(--shadow);
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 .project-image {
-    height: 250px;
+    height: 150px; /* Reduced height to make project cards smaller */
     overflow: hidden;
 }
 
@@ -427,39 +483,34 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.05);
 }
 
 .project-content {
-    padding: 20px;
+    padding: 15px; /* Reduced padding to make project cards smaller */
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .project-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem; /* Reduced font size to make project cards smaller */
+    margin-bottom: 8px;
     text-align: center;
 }
 
 .project-content p {
-    margin-bottom: 15px;
-    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
 }
 
 .project-meta {
     margin-top: auto;
-    margin-bottom: 15px;
-    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
 }
 
 .tech-stack {
-    color: brown;
+    color: #7d4627;
     margin-bottom: 5px;
 }
 
@@ -471,8 +522,8 @@ main {
 /* Engagements Grid */
 .engagements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .engagement-card {
@@ -480,38 +531,41 @@ main {
     background-color: var(--light-bg);
     border-radius: 8px;
     overflow: hidden;
-    transition: var(--transition);
     box-shadow: var(--shadow);
-}
-
-.engagement-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: 150px; /* Reduced height to make engagement cards smaller than others */
 }
 
 .engagement-logo {
-    flex: 0 0 30%;
+    flex: 0 0 35%; /* Changed from 40% to 35% as requested */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px; /* Reduced padding to make engagement cards smaller */
     background-color: #f0f0f0;
 }
 
 .engagement-logo img {
-    max-width: 80%;
-    max-height: 100px;
+    max-width: 90%;
+    max-height: 80px; /* Reduced height to make engagement cards smaller */
     object-fit: contain;
 }
 
 .engagement-content {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Content takes the remaining 65% */
+    padding: 10px; /* Reduced padding to make engagement cards smaller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .engagement-content h3 {
-    margin-bottom: 10px;
-    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-size: 1rem; /* Reduced font size to make engagement cards smaller */
+}
+
+.engagement-content p {
+    font-size: 0.8rem; /* Reduced font size to make engagement cards smaller */
+    line-height: 1.4;
 }
 
 /* Footer */
@@ -536,16 +590,18 @@ footer .container {
     background-color: var(--dark-color);
     color: white;
     border-radius: 50%;
-    transition: var(--transition);
 }
 
 .back-to-top a:hover {
     background-color: var(--primary-color);
-    transform: translateY(-3px);
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
+    .container {
+        width: 70vw;
+    }
+
     .projects-grid,
     .engagements-grid {
         grid-template-columns: 1fr;
@@ -574,6 +630,10 @@ footer .container {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 85vw;
+    }
+
     .hamburger {
         display: block;
     }
@@ -588,7 +648,6 @@ footer .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: var(--transition);
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         padding-top: 80px;
     }
@@ -621,16 +680,20 @@ footer .container {
         width: 100%;
         flex: unset;
     }
+
+    .projects-grid,
+    .engagements-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-    body {
-        margin-left: 0;
-        margin-right: 0;
+    .container {
+        width: 95vw;
     }
     
     .section {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     
     .section-title {
@@ -650,6 +713,6 @@ footer .container {
     }
     
     .project-image {
-        height: 200px;
+        height: 150px;
     }
 }
