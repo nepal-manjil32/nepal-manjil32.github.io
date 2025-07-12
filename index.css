@@ -287,18 +287,75 @@ main {
 /* About Section */
 .about-content {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
 }
 
-.about-content p {
+.about-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-left p {
     font-size: 1rem;
     line-height: 1.7;
+}
+
+.about-right {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
 }
 
 .about-content a {
     color: var(--primary-color);
     font-weight: 400;
+}
+
+.fl-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gif-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.caption-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.gif-credit {
+    font-size: 0.75rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin: 0.25rem 0 0 0;
+    font-style: italic;
+}
+
+/* Keep side by side on all screen sizes */
+@media (max-width: 768px) {
+    .about-content {
+        gap: 1rem;
+    }
+    
+    .about-left p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Experience Section */
