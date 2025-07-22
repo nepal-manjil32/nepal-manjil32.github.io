@@ -500,6 +500,18 @@ main {
     font-weight: 450;
 }
 
+.authors-list {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.authors-list .my-name {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
 .publication-status {
     margin-bottom: 15px;
     color: #555;
